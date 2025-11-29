@@ -316,7 +316,8 @@ if __name__ == "__main__":
         print("🚀 Starting FastAPI server with Masumi integration...")
         print("=" * 70)
         print(f"API Documentation:        http://{host}:{port}/docs")
-        uvicorn.run(app, host=host, port=port, log_level="info")
+        print("🔥🔥🔥 I AM THE NEW CODE ON PORT 8001 🔥🔥🔥") # Add this line!
+        uvicorn.run(app, host="127.0.0.1", port=8001, log_level="info") # Hardcode 8001
     else:
         # NOTE: This standalone mode still uses the OLD logic from your original code.
         # It requires 'ResearchCrew' to be working.
