@@ -135,6 +135,7 @@ async def start_job(data: StartJobRequest):
         # Create a payment request using Masumi
         payment = Payment(
             agent_identifier=agent_identifier,
+            amounts=amounts,
             config=config,
             identifier_from_purchaser=data.identifier_from_purchaser,
             input_data=input_data_dict, # Pass the dict here
